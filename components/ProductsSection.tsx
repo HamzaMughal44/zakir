@@ -48,10 +48,10 @@ const ProductCard = ({ product, user }: { product: Product; user: any }) => {
           <div className="flex items-center justify-between">
             <span className="text-gold font-bold">{formatPrice(product.price1kg)}</span>
             <Link
-              href={user ? `/product/${product.id}` : "/login"}
+              href={`/product/${product.id}`}
               className="px-6 py-2 bg-gold text-forest-deep font-bold rounded-full hover:bg-cream transition-all duration-300 uppercase text-[10px] tracking-widest"
             >
-              {user ? "Shop Now" : "Login to Shop"}
+              Shop Now
             </Link>
           </div>
         </div>

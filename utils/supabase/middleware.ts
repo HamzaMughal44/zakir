@@ -36,15 +36,16 @@ export async function updateSession(request: NextRequest) {
   } = await supabase.auth.getUser()
 
   // Protected routes logic
-  if (
-    !user &&
-    request.nextUrl.pathname.startsWith('/product')
-  ) {
-    const url = request.nextUrl.clone()
-    url.pathname = '/login'
-    url.searchParams.set('error', 'Please login to view products')
-    return NextResponse.redirect(url)
-  }
+  // Removed to allow guest access to products
+  // if (
+  //   !user &&
+  //   request.nextUrl.pathname.startsWith('/product')
+  // ) {
+  //   const url = request.nextUrl.clone()
+  //   url.pathname = '/login'
+  //   url.searchParams.set('error', 'Please login to view products')
+  //   return NextResponse.redirect(url)
+  // }
 
   return supabaseResponse
 }

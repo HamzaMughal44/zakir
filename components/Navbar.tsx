@@ -82,7 +82,7 @@ const Navbar = () => {
 
         {/* CTA - Flex 1 to push links to center */}
         <div className="flex-1 flex items-center justify-end space-x-4">
-          <Link href="https://wa.me/923252940423" target="_blank" className="hidden md:flex items-center gap-2 px-6 py-2 bg-gold text-forest-deep font-bold rounded-full hover:bg-sage hover:text-cream transition-all duration-300 uppercase text-xs tracking-tighter">
+          <Link href="https://wa.me/923252940423?text=Assalam-o-Alaikum,%20I%20have%20an%20inquiry%20about%20ZK%20Dry%20Fruits" target="_blank" className="hidden md:flex items-center gap-2 px-6 py-2 bg-gold text-forest-deep font-bold rounded-full hover:bg-sage hover:text-cream transition-all duration-300 uppercase text-xs tracking-tighter">
             <MessageCircle size={14} className="fill-current" />
             WhatsApp
           </Link>
@@ -154,7 +154,7 @@ const Navbar = () => {
               )}
 
               <Link
-                href="https://wa.me/923001234567"
+                href="https://wa.me/923252940423?text=Assalam-o-Alaikum,%20I%20have%20an%20inquiry%20about%20ZK%20Dry%20Fruits"
                 target="_blank"
                 className="w-full py-4 bg-gold text-forest-deep text-center font-bold rounded-xl uppercase tracking-widest flex items-center justify-center gap-2"
                 onClick={() => setIsMobileMenuOpen(false)}
