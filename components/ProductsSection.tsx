@@ -51,7 +51,7 @@ const ProductCard = ({ product, user }: { product: Product; user: any }) => {
               href={`/product/${product.id}`}
               className="px-6 py-2 bg-gold text-forest-deep font-bold rounded-full hover:bg-cream transition-all duration-300 uppercase text-[10px] tracking-widest"
             >
-              Shop Now
+              Buy Now
             </Link>
           </div>
         </div>
